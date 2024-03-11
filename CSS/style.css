@@ -162,34 +162,38 @@
   
   /* NAVIGATION BAR */
   
-
-  @keyframes infiniteScroll {
-    from {transform: translateX(0)}
-    to {transform: translateX(-50%)}
-  }
-  .scroll_container {
-    position: absolute;
-    bottom: 20px; /* Adjust as needed */
+  .scroll-container {
+    position: relative;
+    overflow: hidden;
     width: 100%;
-    overflow-x: hidden;
-}
-
-.scroll {
+    margin-top: 900px;
+  }
+  
+  .scroll-wrapper {
     display: flex;
-    font-size: 40px; /* Adjust as needed */
-    width: 2600px; /* Adjust as needed */
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.scroll_text {
     white-space: nowrap;
-    margin-bottom: 780px; /* Adjust as needed */
-    user-select: none; /* Prevents text from being selected */
-    pointer-events: none; /* Ignores mouse events on the text */
-}
+  }
+  
+  .scroll-text {
+    font-size: 100px;
+    display: inline-block;
+    padding-right: 50px; /* Adjust spacing between text blocks */
+    animation: scroll-left 20s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+
+
  /* BENTO BOX */
 * {
     box-sizing: border-box;
