@@ -219,14 +219,35 @@
     background-color: #ffffff;
     border-radius: 1rem;
     color: black;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Scale the article on hover */
+article:hover {
+    transform: scale(1.05); /* Scale the article by 5% */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    animation-name: hoverAnimation;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+/* Animation keyframes for smooth hover effect */
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1); /* Initial scale */
+    }
+    to {
+        transform: scale(1.05); /* Hover scale */
+    }
   }
 
   
   .product-image {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
-    display: block; /* Ensures the margin property works as expected */
-    margin: auto; /* Centers the image horizontally */
+    max-width: clamp(200px, 40vw, 300px); 
+    max-height: clamp(200px, 40vh, 300px); 
+    display: block; 
+    margin: auto; 
 }
 
   /* Media queries for responsive layout */
@@ -696,7 +717,7 @@ height: auto;
 }
 
 .section2 {
-  height: 150vh;
+  height: 300vh;
   display: flex;
   align-items: center;
   justify-content: center;
