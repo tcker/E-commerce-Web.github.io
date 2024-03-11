@@ -72,7 +72,7 @@
   }
   
   /* NAVIGATION BAR */
-  
+
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
   
   
@@ -218,7 +218,9 @@
   article {
     background-color: #ffffff;
     border-radius: 1rem;
+    color: black;
   }
+
   
   .product-image {
     width: 300px; /* Adjust the width as needed */
@@ -254,115 +256,158 @@
     }
   }
   
+  /* Media query for phone screens */
+@media screen and (max-width: 639px) {
+  /* Move each article to the bottom */
+  article {
+      grid-row: auto !important; /* Reset any previous grid-row settings */
+      grid-column: auto !important; /* Reset any previous grid-column settings */
+  }
+
+  /* Adjust the grid to display one column */
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+}
   
-  
 
 
 
 
-  .modal {
-    background: #FFFFFF;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
-    max-width: 450px;
-    justify-content: flex-start; 
-  }
-  .form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-  .paymentother {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px;
-    padding: 10px;
-    justify-content: center;
-  }
-  .paymentother button {
-    height: 55px;
-    background: #F2F2F2;
-    border-radius: 11px;
-    padding: 0;
-    border: 0;
-    outline: none;
-  }
-  .paymentother button svg {
-    height: 18px;
-  }
-  .paymentother button:last-child svg {
-    height: 22px;
-  }
-  .separator {
-    width: calc(100% - 20px);
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 10px;
-    color: #8B8E98;
-    margin: 0 10px;
-  }
-  .separator p {
-    display: block;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    margin: auto;
-  }
-  .separator .line {
-    display: inline-block;
-    width: 100%;
-    height: 1px;
-    border: 0;
-    background-color: #e8e8e8;
-  }
-  .card-info{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  .input_container {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  .split {
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    gap: 15px;
-  }
-  .split input {
-    width: 100%;
-  }
-  .input_label {
-    font-size: 12px;
-    color: #8B8E98;
-    font-weight: 600;
-  }
-  .input_field {
-    width: auto;
-    height: 40px;
-    padding: 0 0 0 16px;
-    border-radius: 9px;
-    outline: none;
-    background-color: #F2F2F2;
-    border: 1px solid #e5e5e500;
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-  }
-  .input_field:focus {
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 0px 2px #242424;
-    background-color: transparent;
-  }
-  /* Reset input number styles */
-  .input_field::-webkit-outer-spin-button,
-  .input_field::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+/* Base styles for the modal */
+.modal {
+  background: #FFFFFF;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  max-width: 450px;
+  justify-content: flex-start; 
+  margin: 0 auto; /* Center the modal horizontally */
+  padding: 20px; /* Add padding to the modal */
+}
+
+/* Styles for the form container */
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Styles for the payment options container */
+.paymentother {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Make the payment options responsive */
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.paymentother button {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+/* Styles for the payment option buttons */
+.paymentother button svg {
+  height: 18px;
+}
+
+.paymentother button:last-child svg {
+  height: 22px;
+}
+
+/* Styles for the separator */
+.separator {
+  width: calc(100% - 40px); /* Adjust width and margins for responsiveness */
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 10px;
+  color: #8B8E98;
+  margin: 0 auto; /* Center the separator */
+}
+
+.separator p {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  margin: auto;
+}
+
+.separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+}
+
+/* Styles for the card information */
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Styles for the input container */
+.input_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Styles for the split input fields */
+.split {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 15px;
+}
+
+.split input {
+  width: 100%;
+}
+
+/* Styles for the input labels */
+.input_label {
+  font-size: 12px;
+  color: #8B8E98;
+  font-weight: 600;
+}
+
+/* Styles for the input fields */
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border-radius: 9px;
+  outline: none;
+  background-color: #F2F2F2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Styles for the checkout button */
+/* Styles for the checkout button */
+
   .checkout {
     position: relative;
     font-family: inherit;
@@ -405,16 +450,34 @@
     transform: scale(0.95);
   }
   
+
+
 /* Adjust the size of the Apple Pay logo */
 .gcash-pay-logo {
-  width: 100px; 
-  height: auto; 
+width: 100px; 
+height: auto; 
 }
 
 /* Adjust the size of the Google Pay logo */
 .unionbank-pay-logo {
-  width: 120px; 
-  height: auto; 
+width: 120px; 
+height: auto; 
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .modal {
+      max-width: 100%; /* Adjust the max-width for smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .separator {
+      width: calc(100% - 20px); /* Adjust width for smaller screens */
+  }
+
+  .checkout {
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
 }
 
 
@@ -632,6 +695,21 @@
     /* Remove scroll-snap-align for section 1 */
 }
 
+.section2 {
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding-left: 20px;
+  scroll-snap-align: none; /* Disable scroll snap for section2 */
+
+  /* Apply clamp() for font size within section2 */
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+
 .section2,
 .section3,
 .section4 {
@@ -647,23 +725,45 @@
 }
 
 .overlay-text {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    position: absolute;
-    color: white;
-    width: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  position: absolute;
+  color: white;
+  width: 100%;
 }
 
 .overlay-text.top {
-    margin-top: 20px;
-    font-size: 50px;
-    left: 30px;
+  font-size: clamp(2rem, 5vw, 70px);
+  margin-bottom: 500px; /* This might not be necessary for responsiveness */
+  left: 30px;
+}
+
+.overlay-text.second {
+  font-size: clamp(1.2rem, 3vw, 40px);
+  margin-top: 20px;
+  left: 30px;
+  color: #8B8E98;
+  transition: color 0.5s ease;
+  z-index: 999;
+}
+
+.overlay-text.top:hover {
+  color: #FF6200;
+}
+
+
+.overlay-text.second:hover {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  color: white;
 }
 
 .overlay-text.bottom {
-    font-size: 20px;
-    text-align: center;
-    bottom: 20px;
+  font-size: clamp(0.8rem, 2vw, 20px);
+  text-align: center;
+  bottom: 20px;
 }
+
+
 
 #home spline-viewer {
     position: absolute;
