@@ -88,6 +88,7 @@
     z-index: 1000;
     padding-top: 11px;
     padding-bottom: 11px;
+    backdrop-filter: blur(5px);
     animation: fadeOut2 8s forwards;
   }
   
@@ -255,6 +256,172 @@
   
   
   
+
+
+
+
+  .modal {
+    background: #FFFFFF;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    max-width: 450px;
+    justify-content: flex-start; 
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .paymentother {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .paymentother button {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+  .paymentother button svg {
+    height: 18px;
+  }
+  .paymentother button:last-child svg {
+    height: 22px;
+  }
+  .separator {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 10px;
+    color: #8B8E98;
+    margin: 0 10px;
+  }
+  .separator p {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto;
+  }
+  .separator .line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+  }
+  .card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .input_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .split {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 15px;
+  }
+  .split input {
+    width: 100%;
+  }
+  .input_label {
+    font-size: 12px;
+    color: #8B8E98;
+    font-weight: 600;
+  }
+  .input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  .input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+  }
+  /* Reset input number styles */
+  .input_field::-webkit-outer-spin-button,
+  .input_field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .checkout {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: #302b63;
+    color: ghostwhite;
+    overflow: hidden;
+  }
+  .checkout span {
+    position: relative;
+    transition: color 0.6s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+  }
+  .checkout::before,
+  .checkout::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .checkout::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+  }
+  .checkout:hover::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  .checkout:active {
+    transform: scale(0.95);
+  }
+  
+/* Adjust the size of the Apple Pay logo */
+.gcash-pay-logo {
+  width: 100px; 
+  height: auto; 
+}
+
+/* Adjust the size of the Google Pay logo */
+.unionbank-pay-logo {
+  width: 120px; 
+  height: auto; 
+}
+
+
+
+
+
+
   
   
   body {
@@ -454,61 +621,65 @@
       scroll-behavior: smooth; 
   }
   
-  .section1,
-  .section2,
-  .section3,
-  .section4 {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      color: rgb(255, 255, 255);
-      font-size: 2em;
-      text-align: left; 
-      padding-left: 20px;
-      scroll-snap-align: start; 
-  }
-  
-  .section2,
-  .section3,
-  .section4 {
-      justify-content: center;
-      align-items: center;
-  }
-  
-    .overlay-text {
-      font-family: 'Helvetica', 'Arial', sans-serif;
-      position: absolute;
-      color: white;
-      width: 100%;
-  }
-  
-  .overlay-text.top {
+  .section1 {
+    height: 120vh; /* Adjusted height for section 1 */
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: left;
+    padding-left: 20px;
+    /* Remove scroll-snap-align for section 1 */
+}
+
+.section2,
+.section3,
+.section4 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: left;
+    padding-left: 20px;
+    scroll-snap-align: none; /* Disable scroll snap for all sections */
+}
+
+.overlay-text {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+.overlay-text.top {
     margin-top: 20px;
     font-size: 50px;
-    left: 30px; 
-  }
-  
-  .overlay-text.bottom {
+    left: 30px;
+}
+
+.overlay-text.bottom {
     font-size: 20px;
     text-align: center;
-    bottom: 20px; 
-  }
-  
-  #home spline-viewer {
-    position: absolute; 
+    bottom: 20px;
+}
+
+#home spline-viewer {
+    position: absolute;
     top: 0;
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-  }
-  
-  .section4 {
-      height: calc(100vh - 350px);
-      scroll-snap-type: none; 
-  }
-  
- /* Define fading background color for sections */
- .section1 {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section4 {
+    height: calc(100vh - 350px);
+    scroll-snap-type: none;
+}
+
+/* Define fading background color for sections */
+.section1 {
     background: black;
 }
 
