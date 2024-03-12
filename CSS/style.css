@@ -186,6 +186,7 @@ h1 {
   display: inline-block;
   padding-right: 50px; 
   animation: scroll-left 40s linear infinite; 
+  user-select: none;
 }
 
 .scroll-text:hover {
@@ -651,12 +652,14 @@ margin: 0;
 }
 
 
+
+/* Adjust the size of the Apple Pay logo */
 .gcash-pay-logo {
 width: 100px; 
 height: auto; 
 }
 
-
+/* Adjust the size of the Google Pay logo */
 .unionbank-pay-logo {
 width: 120px; 
 height: auto; 
@@ -935,6 +938,7 @@ font-family: 'Helvetica', 'Arial', sans-serif;
 position: absolute;
 color: white;
 width: 100%;
+user-select: none;
 }
 
 .overlay-text.top {
@@ -1033,7 +1037,7 @@ bottom: 20px;
   scroll-snap-type: none;
 }
 
-
+/* Define fading background color for sections */
 .section1 {
   background: black;
 }
