@@ -180,12 +180,12 @@ h1 {
 
 .scroll-text {
   font-size: 100px;
-  font-family: "Times New Roman", Times, serif; /* Apply New Times Roman font */
+ /* font-family: "Times New Roman", Times, serif; /* Apply New Times Roman font */
   font-style: italic; /* Apply italic style */
   text-transform: uppercase; /* Convert text to uppercase */
   display: inline-block;
   padding-right: 50px; /* Adjust spacing between text blocks */
-  animation: scroll-left 20s linear infinite; /* Adjust animation duration as needed */
+  animation: scroll-left 40s linear infinite; /* Adjust animation duration as needed */
 }
 
 .scroll-text:hover {
@@ -478,6 +478,12 @@ article {
 
 
 
+/* section-products */
+
+/* section-products  */
+
+
+
 
 
 /* Base styles for the modal */
@@ -684,7 +690,7 @@ height: auto;
 
 .checkout {
     font-size: 16px; /* Adjust font size for smaller screens */
-}
+  }
 }
 
 
@@ -930,6 +936,18 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
   scroll-snap-align: none; /* Disable scroll snap for all sections */
 }
 
+.section-products {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  text-align: left;
+  padding-left: 20px;
+  scroll-snap-align: none; 
+}
+
 .overlay-text {
 font-family: 'Helvetica', 'Arial', sans-serif;
 position: absolute;
@@ -952,6 +970,12 @@ transition: color 0.5s ease;
 z-index: 999;
 }
 
+.overlay-text.third {
+  font-size: clamp(2rem, 3vw, 30px);
+  margin-bottom: 50px; 
+  margin-left: 1600px; 
+  bottom: 10px; 
+}
 /* Section4 */
 
 .overlay-text-sec4.first {
@@ -1021,6 +1045,7 @@ bottom: 20px;
   height: 100%;
 }
 
+
 .section4 {
   height: calc(100vh - 350px);
   scroll-snap-type: none;
@@ -1033,6 +1058,11 @@ bottom: 20px;
 
 .section2 {
   background-color: rgb(24, 24, 24); /* Orig Color was black */
+  color: white;
+}
+
+.section-products {
+  background-color: #ff0000;;
   color: white;
 }
 
