@@ -30,7 +30,7 @@
   border: 4px solid #3498db;
   border-radius: 50%;
   border-top-color: transparent;
-  animation: spin 2s linear infinite; /* Change the duration and timing function */
+  animation: spin 2s linear infinite; 
 }
 
 @keyframes spin {
@@ -180,12 +180,11 @@ h1 {
 
 .scroll-text {
   font-size: 100px;
- /* font-family: "Times New Roman", Times, serif; /* Apply New Times Roman font */
-  font-style: italic; /* Apply italic style */
-  text-transform: uppercase; /* Convert text to uppercase */
+  font-style: italic; 
+  text-transform: uppercase; 
   display: inline-block;
-  padding-right: 50px; /* Adjust spacing between text blocks */
-  animation: scroll-left 40s linear infinite; /* Adjust animation duration as needed */
+  padding-right: 50px; 
+  animation: scroll-left 40s linear infinite; 
 }
 
 .scroll-text:hover {
@@ -238,12 +237,11 @@ h1 {
   padding-bottom: 40px;
 }
 
-/* Individual grid items (articles) */
 article {
   background-color: #ffffff;
   border-radius: 1rem;
   color: black;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease; 
   backdrop-filter: blur(4px);
   margin-bottom: 5px;
   margin-right: 5px;
@@ -251,35 +249,35 @@ article {
 }
 
 article::before {
-content: ''; /* Required for pseudo-elements */
-position: absolute; /* Position the overlay */
+content: ''; 
+position: absolute; 
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency here */
-border-radius: 1rem; /* Match the border-radius of the article */
-backdrop-filter: blur(4px); /* Apply the backdrop filter */
-z-index: -1; /* Move the pseudo-element behind the content */
+background-color: rgba(255, 255, 255, 0.5); 
+border-radius: 1rem; 
+backdrop-filter: blur(4px); 
+z-index: -1; 
 }
 
-/* Scale the article on hover */
+
 article:hover {
-  transform: scale(1.05); /* Scale the article by 5% */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  transform: scale(1.05); 
+  cursor: pointer; 
   animation-name: hoverAnimation;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
 
-/* Animation keyframes for smooth hover effect */
+
 @keyframes hoverAnimation {
   from {
-      transform: scale(1); /* Initial scale */
+      transform: scale(1); 
   }
   to {
-      transform: scale(1.05); /* Hover scale */
+      transform: scale(1.05); 
   }
 }
 
@@ -329,73 +327,71 @@ article:hover {
 .articletext3,
 .articletext4,
 .articletext5 {
-  text-align: center; /* Center the text horizontally */
+  text-align: center;
 }
 
 
 .articletext1 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext1 h2 */
+  font-size: clamp(20px, 4vw, 30px); 
   margin-bottom: 5px;
 }
 
 .articletext1 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext1 p */
-  margin-bottom: 5px;
+  font-size: clamp(20px, 4vw, 30px); 
 }
 
 
 .articletext2 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: clamp(15px, 3vw, 20px); /* Unique font size for articletext2 h2 */
+  font-size: clamp(15px, 3vw, 20px); 
   margin-bottom: 5px;
 }
 
 .articletext2 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(15px, 3vw, 20px); /* Unique font size for articletext2 p */
+  font-size: clamp(15px, 3vw, 20px); 
   margin-bottom: 5px;
 }
 
 .articletext3 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext3 h2 */
+  font-size: clamp(20px, 4vw, 30px); 
   margin-bottom: 5px;
 }
 
 .articletext3 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext3 p */
+  font-size: clamp(20px, 4vw, 30px);
   margin-bottom: 5px;
 }
 
 .articletext4 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext4 h2 */
+  font-size: clamp(20px, 4vw, 30px); 
   margin-bottom: 5px;
 }
 
 .articletext4 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext4 p */
+  font-size: clamp(20px, 4vw, 30px); 
   margin-bottom: 5px;
 }
 
 .articletext5 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext5 h2 */
-  margin-bottom: 5px;
+  font-size: clamp(20px, 4vw, 30px); 
 }
 
 .articletext5 p {
   font-family: 'Montserrat', sans-serif;
-  font-size: clamp(20px, 4vw, 30px); /* Unique font size for articletext5 p */
+  font-size: clamp(20px, 4vw, 30px); 
   margin-bottom: 5px;
 }
 
@@ -415,7 +411,6 @@ article:hover {
     grid-template-rows: 4fr 3fr 3fr;
   }
 
-  /* Adjusting grid item placement for larger screens */
   article:nth-of-type(1) {
     grid-row: 1 / span 2;
   }
@@ -432,13 +427,12 @@ article:hover {
 
 /* Media query for phone screens */
 @media screen and (max-width: 639px) {
-/* Move each article to the bottom */
 article {
-    grid-row: auto !important; /* Reset any previous grid-row settings */
-    grid-column: auto !important; /* Reset any previous grid-column settings */
+    grid-row: auto !important; 
+    grid-column: auto !important; 
 }
 
-/* Adjust the grid to display one column */
+
 .grid-container {
     grid-template-columns: 1fr;
   }
@@ -446,22 +440,22 @@ article {
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    margin-right: 10px; /* Adjust margins for smaller screens */
+    grid-template-columns: 1fr;
+    margin-right: 10px; 
     margin-left: 10px;
   }
 
-  /* Adjust maximum width and height of product images for mobile */
+
   .product-image,
   .product-image2,
   .product-image3,
   .product-image4,
   .product-image5 {
-    max-width: clamp(100px, 40vw, 300px); /* Adjust the values accordingly */
+    max-width: clamp(100px, 40vw, 300px); 
     max-height: clamp(100px, 40vh, 300px);
   }
 
-  /* Adjust font sizes for article texts on mobile */
+
   .articletext1 h2,
   .articletext1 p,
   .articletext2 h2,
@@ -472,7 +466,7 @@ article {
   .articletext4 p,
   .articletext5 h2,
   .articletext5 p {
-    font-size: clamp(12px, 4vw, 20px); /* Adjust the values accordingly */
+    font-size: clamp(12px, 4vw, 20px); 
   }
 }
 
@@ -486,7 +480,6 @@ article {
 
 
 
-/* Base styles for the modal */
 .modal {
 background: #FFFFFF;
 box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -498,7 +491,7 @@ padding: 20px;
 width: 400px;
 }
 
-/* Styles for the form container */
+
 .form {
 position: relative;
 display: flex;
@@ -506,10 +499,10 @@ flex-direction: column;
 gap: 20px;
 }
 
-/* Styles for the payment options container */
+
 .paymentother {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Make the payment options responsive */
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
 gap: 20px;
 padding: 10px;
 justify-content: center;
@@ -524,7 +517,7 @@ border: 0;
 outline: none;
 }
 
-/* Styles for the payment option buttons */
+
 .paymentother button svg {
 height: 18px;
 }
@@ -533,14 +526,14 @@ height: 18px;
 height: 22px;
 }
 
-/* Styles for the separator */
+
 .separator {
-width: calc(100% - 40px); /* Adjust width and margins for responsiveness */
+width: calc(100% - 40px); 
 display: grid;
 grid-template-columns: 2fr 1fr 2fr;
 gap: 10px;
 color: #8B8E98;
-margin: 0 auto; /* Center the separator */
+margin: 0 auto;
 }
 
 .separator p {
@@ -559,14 +552,14 @@ border: 0;
 background-color: #e8e8e8;
 }
 
-/* Styles for the card information */
+
 .card-info {
 display: flex;
 flex-direction: column;
 gap: 15px;
 }
 
-/* Styles for the input container */
+
 .input_container {
 width: 100%;
 height: fit-content;
@@ -575,7 +568,6 @@ flex-direction: column;
 gap: 5px;
 }
 
-/* Styles for the split input fields */
 .split {
 display: grid;
 grid-template-columns: 4fr 2fr;
@@ -586,14 +578,12 @@ gap: 15px;
 width: 100%;
 }
 
-/* Styles for the input labels */
 .input_label {
 font-size: 12px;
 color: #8B8E98;
 font-weight: 600;
 }
 
-/* Styles for the input fields */
 .input_field {
 width: auto;
 height: 40px;
@@ -611,15 +601,11 @@ box-shadow: 0px 0px 0px 2px #242424;
 background-color: transparent;
 }
 
-/* Reset input number styles */
 .input_field::-webkit-outer-spin-button,
 .input_field::-webkit-inner-spin-button {
 -webkit-appearance: none;
 margin: 0;
 }
-
-/* Styles for the checkout button */
-/* Styles for the checkout button */
 
 .checkout {
   position: relative;
@@ -680,16 +666,16 @@ height: auto;
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
 .modal {
-    max-width: 100%; /* Adjust the max-width for smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 100%; 
+    padding: 10px; 
 }
 
 .separator {
-    width: calc(100% - 20px); /* Adjust width for smaller screens */
+    width: calc(100% - 20px); 
 }
 
 .checkout {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 16px; 
   }
 }
 
@@ -898,14 +884,13 @@ body {
 }
 
 .section1 {
-  height: 120vh; /* Adjusted height for section 1 */
+  height: 120vh; 
   display: flex;
   align-items: center;
   color: rgb(255, 255, 255);
   font-size: 2em;
   text-align: left;
   padding-left: 20px;
-  /* Remove scroll-snap-align for section 1 */
 }
 
 .section2 {
@@ -916,9 +901,7 @@ justify-content: center;
 color: rgb(255, 255, 255);
 text-align: left;
 padding-left: 20px;
-scroll-snap-align: none; /* Disable scroll snap for section2 */
-
-/* Apply clamp() for font size within section2 */
+scroll-snap-align: none; 
 font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
@@ -933,7 +916,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
   font-size: 2em;
   text-align: left;
   padding-left: 20px;
-  scroll-snap-align: none; /* Disable scroll snap for all sections */
+  scroll-snap-align: none; 
 }
 
 .section-products {
@@ -957,7 +940,7 @@ width: 100%;
 
 .overlay-text.top {
 font-size: clamp(2rem, 5vw, 70px);
-margin-bottom: 500px; /* This might not be necessary for responsiveness */
+margin-bottom: 500px; 
 left: 30px;
 }
 
@@ -980,10 +963,10 @@ z-index: 999;
 
 .overlay-text-sec4.first {
   font-size: clamp(2rem, 5vw, 250px);
-  margin-bottom: 800px; /* This might not be necessary for responsiveness */
+  margin-bottom: 800px; 
   left: 10px;
-  position: relative; /* Ensure relative positioning */
-  top: 20%; /* Adjust as needed to position it further down */
+  position: relative; 
+  top: 20%; 
 }
 
 .overlay-text-sec4.second {
@@ -992,10 +975,10 @@ z-index: 999;
   color: #8B8E98;
   transition: color 0.5s ease;
   z-index: 999;
-  position: absolute; /* Position it absolutely */
-  top: 50%; /* Adjust as needed to position it below the first overlay */
-  width: 100%; /* Ensure it spans the full width of its container */
-  text-align: justify; /* Add text alignment property */
+  position: absolute; 
+  top: 50%; 
+  width: 100%; 
+  text-align: justify; 
 }
 
 .overlay-text-sec4.third {
@@ -1009,10 +992,10 @@ z-index: 999;
   font-size: 2em;
   text-align: left;
   padding-left: 20px;
-  scroll-snap-align: none; /* Disable scroll snap for all sections */
+  scroll-snap-align: none; 
 
-  position: relative; /* Ensure that the position of overlay text is relative to this container */
-  left: 0; /* Add this line to position the overlay text at the left edge */
+  position: relative; 
+  left: 0; 
 }
 
 /* Section4 */
