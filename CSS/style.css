@@ -113,7 +113,7 @@ h1 {
   margin-left: clamp(20px, 5vw, 50px); 
   margin-right: clamp(20px, 5vw, 50px); 
   padding-right: 20px; 
-  margin-left: 50px;
+  margin-left: 40px;
   border-right: 2px solid white; 
   font-weight: bold; 
   font-size: clamp(16px, 4vw, 24px); 
@@ -896,7 +896,7 @@ body {
 }
 
 .section2 {
-height: 300vh;
+height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -907,8 +907,12 @@ scroll-snap-align: none;
 font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
+@media screen and (max-width: 600px) {
+  .section2 {
+    height:200vh; /* Adjust the height for smaller screens */
+  }
+}
 
-.section2,
 .section3 {
   height: 100vh;
   display: flex;
@@ -942,13 +946,13 @@ user-select: none;
 }
 
 .overlay-text.top {
-font-size: clamp(2rem, 5vw, 70px);
+font-size: clamp(2rem, 10vw, 70px);
 margin-bottom: 500px; 
 left: 30px;
 }
 
 .overlay-text.second {
-font-size: clamp(1.2rem, 3vw, 40px);
+font-size: clamp(1.2rem, 6vw, 40px);
 margin-top: 20px;
 left: 30px;
 color: #8B8E98;
@@ -965,7 +969,7 @@ z-index: 999;
 /* Section4 */
 
 .overlay-text-sec4.first {
-  font-size: clamp(2rem, 5vw, 250px);
+  font-size: clamp(2rem, 15vw, 250px);
   margin-bottom: 800px; 
   left: 10px;
   position: relative; 
@@ -973,7 +977,7 @@ z-index: 999;
 }
 
 .overlay-text-sec4.second {
-  font-size: clamp(1.2rem, 3vw, 35px);
+  font-size: clamp(1.2rem, 4vw, 35px);
   left: 30px;
   color: #8B8E98;
   transition: color 0.5s ease;
