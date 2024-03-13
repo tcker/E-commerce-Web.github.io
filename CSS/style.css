@@ -1,3 +1,4 @@
+
 .container::-webkit-scrollbar {
   display: none;
 }
@@ -980,7 +981,7 @@ z-index: 999;
 /* Section4 */
 
 .overlay-text-sec4.first {
-  font-size: clamp(2rem, 15vw, 250px);
+  font-size: clamp(2rem, 20vw, 130px);
   margin-bottom: 800px; 
   left: 10px;
   position: relative; 
