@@ -583,28 +583,28 @@ article {
 
 
 
-.card--1 .card__img, .card--1 .card__img--hover {
+.card--1 .card_img, .card--1 .card_img--hover {
   background-image: url('https://cdn.mos.cms.futurecdn.net/gCvzbrmui5f3Y6pZ8SyK6K-970-80.jpg');
 }
 
 
-.card--2 .card__img, .card--2 .card__img--hover {
+.card--2 .card_img, .card--2 .card_img--hover {
   background-image: url('https://images.squarespace-cdn.com/content/v1/621663e7e8f5476ba5df4287/ea6fcc0b-414e-41df-a9ad-1f0f7878b023/Ibasso-DX320-DAP.jpg?format=2500w');
 }
 
 
-.card--3 .card__img, .card--3 .card__img--hover {
+.card--3 .card_img, .card--3 .card_img--hover {
   background-image: url('https://cdn.mos.cms.futurecdn.net/YBZK8ZrDWnsJgt6emyJHtG.jpg');
 }
 
-.card--4 .card__img, .card--4 .card__img--hover {
+.card--4 .card_img, .card--4 .card_img--hover {
   background-image: url('https://i.ebayimg.com/images/g/wF0AAOSwai1i49dn/s-l1600.jpg');
 }
 
 
 
 
-.card__img {
+.card_img {
   visibility: hidden;
   background-size: cover;
   background-position: center;
@@ -617,8 +617,8 @@ article {
 
 }
 
-.card__img,
-.card__img--hover {
+.card_img,
+.card_img--hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -628,7 +628,7 @@ article {
   border-top-right-radius: 12px;
 }
 
-.card__img--hover {
+.card_img--hover {
   transition: 0.2s all ease-out;
   background-size: cover;
   background-position: center;
@@ -641,7 +641,7 @@ article {
   top: 0;
 }
 
-.card__info-hover {
+.card_info-hover {
   position: absolute;
   padding: 16px;
   width: 100%;
@@ -651,7 +651,7 @@ article {
   text-align: center;
 }
 
-.card:hover .card__info-hover {
+.card:hover .card_info-hover {
   opacity: 1;
 }
 
@@ -706,7 +706,7 @@ article {
 }
 
 
-.card__info {
+.card_info {
   z-index: 2;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -714,7 +714,7 @@ article {
 }
 
 
-.card__category {
+.card_category {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -722,7 +722,7 @@ article {
   letter-spacing: 2px;
 }
 
-.card__title {
+.card_title {
   margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -730,24 +730,24 @@ article {
   font-size: clamp(16px, 3vw, 20px); 
 }
 
-.card:hover .card__img--hover {
+.card:hover .card_img--hover {
   height: 100%;
   opacity: 1;
 }
 
 
-.card:hover .card__info {
+.card:hover .card_info {
   background-color: transparent;
   position: relative;
 }
 
 
-.card:hover .card__info-hover {
+.card:hover .card_info-hover {
   opacity: 1;
 }
 
-.card:hover .card__category,
-.card:hover .card__title {
+.card:hover .card_category,
+.card:hover .card_title {
   color: white;
 }
 
@@ -758,7 +758,7 @@ article {
 }
 
 @media screen and (max-width: 1388px) {
-  .card__title {
+  .card_title {
     font-size: clamp(16px, 2.88vw, 20px); 
   }
 }
@@ -777,22 +777,22 @@ article {
     width: 100%; 
   }
 
-  .card__img {
+  .card_img {
     height: auto; 
     max-height: clamp(100px, 40vh, 300px); 
   }
 
-  .card__info {
+  .card_info {
     padding: 12px 20px; 
     opacity: 1; 
     color: white;
     font-size: clamp(12px, 4vw, 20px); 
   }
-  .card__title {
+  .card_title {
     color: white;
   }
   
-  .card__category {
+  .card_category {
     color: white;
   }
 
@@ -818,22 +818,22 @@ article {
     width: 100%; 
   }
 
-  .card__img {
+  .card_img {
     height: auto; 
     max-height: clamp(100px, 40vh, 300px); 
   }
 
-  .card__info {
+  .card_info {
     padding: 12px 20px; 
     opacity: 1; 
     color: white;
     font-size: clamp(12px, 4vw, 20px); 
   }
-  .card__title {
+  .card_title {
     color: white;
   }
   
-  .card__category {
+  .card_category {
     color: white;
   }
   
