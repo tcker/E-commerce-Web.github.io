@@ -1306,7 +1306,6 @@ height: auto;
   align-items: center;
   color: rgb(255, 255, 255);
   font-size: 2em;
-  text-align: left;
   padding-left: 20px;
 }
 
@@ -1664,6 +1663,7 @@ color: white;
 
 .overlay-text.bottom {
 font-size: clamp(0.8rem, 2vw, 20px);
+right: 5px;
 text-align: center;
 bottom: 20px;
 }
