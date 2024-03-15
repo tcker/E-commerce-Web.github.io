@@ -1369,7 +1369,6 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
   }
 }
 
-
 @media screen and (min-width: 770px) and (max-width: 1022px) and (min-height: 854px) and (max-height: 854px) {
   .section2 {
     height: 100vh; /* Adjust the height for devices with a screen width ranging from 770px to 1022px and a height of 854px */
@@ -1456,6 +1455,33 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 @media screen and (min-width: 770px) and (max-width: 1022px) and (min-height: 757px) and (max-height: 757px) {
   .section2 {
     height: 100vh; /* Adjust the height for devices with a screen width ranging from 770px to 1022px and a height of 757px */
+  }
+  .overlay-text.bottom {
+    font-size: clamp(0.8rem, 2vw, 10px);
+    text-align: center;
+    bottom: 20px;
+  }
+  .grid-container {
+    grid-template-rows: auto auto auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+ 
+  article:nth-child(1) {
+    grid-row: 1 / span 2;
+  }
+  article:nth-child(2) {
+    grid-row: 3;
+  }
+  article:nth-child(5) {
+    grid-row: 2 / span 2;
+    grid-column: 2 / span 2;
+  }
+}
+
+@media screen and (min-device-width: 774px) and (max-device-width: 1022px) and (min-device-height: 800px) and (max-device-height: 800px) {
+  .section2 {
+    height: 90vh; /* Adjust the height for screens between 774 x 800 and 1022 x 800 */
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1662,3 +1688,7 @@ bottom: 20px;
   background-color: rgb(0, 0, 0);
   color: white;
 }
+ 
+
+
+
