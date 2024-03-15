@@ -478,7 +478,7 @@ article:hover {
 .product-image3,
 .product-image4,
 .product-image5 {
-  background-color: transparent; /* Set background color of the images to transparent */
+  background-color: transparent;
 }
 
 
@@ -753,13 +753,13 @@ article {
 
 @media screen and (min-width: 919px) and (max-width: 1750px) {
   .buy-button {
-    margin-top: 20px; /* Adjusted margin top for smaller screens */
+    margin-top: 20px; 
   }
 }
 
 @media screen and (max-width: 1388px) {
   .card__title {
-    font-size: clamp(16px, 2.88vw, 20px); /* Adjusted font size for smaller screens */
+    font-size: clamp(16px, 2.88vw, 20px); 
   }
 }
 
@@ -1330,14 +1330,14 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (max-width: 600px) {
   .section2 {
-    height:200vh; /* Adjust the height for smaller screens */
+    height:200vh; 
   }
 }
 
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .section2 {
-    height: 300vh; /* Adjust the height for tablet screens */
+    height: 300vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1347,7 +1347,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 @media screen and (min-device-width: 820px) and (max-device-width: 820px) and (min-device-height: 1180px) and (max-device-height: 1180px) {
   .section2 {
-    height: 90vh; /* Adjust the height for 820 x 1180 screens */
+    height: 90vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1374,7 +1374,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (min-width: 770px) and (max-width: 1022px) and (min-height: 854px) and (max-height: 854px) {
   .section2 {
-    height: 100vh; /* Adjust the height for devices with a screen width ranging from 770px to 1022px and a height of 854px */
+    height: 100vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1402,7 +1402,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (min-width: 770px) and (max-width: 1018px) and (min-height: 1060px) and (max-height: 1069px) {
   .section2 {
-    height: 100vh; /* Adjust the height for devices with a screen width ranging from 770px to 1018px and a height from 1060px to 1069px */
+    height: 100vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1430,7 +1430,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (min-width: 769px) and (max-width: 1023px) and (min-height: 903px) and (max-height: 903px) {
   .section2 {
-    height: 100vh; /* Adjust the height for devices with a screen width ranging from 769px to 1023px and a height of 903px */
+    height: 100vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1457,7 +1457,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (min-width: 770px) and (max-width: 1022px) and (min-height: 757px) and (max-height: 757px) {
   .section2 {
-    height: 100vh; /* Adjust the height for devices with a screen width ranging from 770px to 1022px and a height of 757px */
+    height: 100vh;
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1484,7 +1484,7 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
 
 @media screen and (min-device-width: 774px) and (max-device-width: 1022px) and (min-device-height: 800px) and (max-device-height: 800px) {
   .section2 {
-    height: 90vh; /* Adjust the height for screens between 774 x 800 and 1022 x 800 */
+    height: 90vh; 
   }
   .overlay-text.bottom {
     font-size: clamp(0.8rem, 2vw, 10px);
@@ -1661,14 +1661,14 @@ bottom: 20px;
 }
 
 
-/* Define fading background color for sections */
+
 .section1 {
   background: black;
 }
 
 
 .section2 {
-  background-color: rgb(0, 0, 0); /* Orig Color was black */
+  background-color: rgb(0, 0, 0); 
   color: white;
 }
 
