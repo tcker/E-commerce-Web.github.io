@@ -1314,7 +1314,6 @@ align-items: center;
 justify-content: center;
 color: rgb(255, 255, 255);
 text-align: left;
-padding-left: 20px;
 scroll-snap-align: none;
 font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
@@ -1518,7 +1517,6 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
   color: rgb(255, 255, 255);
   font-size: 2em;
   text-align: left;
-  padding-left: 20px;
   scroll-snap-align: none;
 }
 
@@ -1531,7 +1529,6 @@ font-size: clamp(1.5rem, 2vw, 2.5rem);
   color: rgb(255, 255, 255);
   font-size: 2em;
   text-align: left;
-  padding-left: 20px;
   scroll-snap-align: none;
 }
 
