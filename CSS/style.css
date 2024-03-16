@@ -1629,11 +1629,11 @@ z-index: 999;
 
 
 .overlay-text-sec4.first {
-  font-size: clamp(1rem, 10vw, 130px);
+  font-size: clamp(1rem, 10vw, 110px);
   margin-bottom: 800px;
   left: 10px;
   position: relative;
-  top: 20%;
+  top: 25%;
 }
 
 
@@ -1644,7 +1644,7 @@ z-index: 999;
   transition: color 0.5s ease;
   z-index: 999;
   position: absolute;
-  top: 50%;
+  top: 60%;
   width: 100%;
   text-align: justify;
 }
@@ -1665,7 +1665,7 @@ z-index: 999;
     transition: color 0.5s ease;
     z-index: 999;
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 100%;
     text-align: justify;
   }
