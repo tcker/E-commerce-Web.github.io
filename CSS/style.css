@@ -1613,7 +1613,7 @@ left: 30px;
 font-size: clamp(1.2rem, 8vw, 40px);
 margin-top: 20px;
 left: 30px;
-color: #8B8E98;
+color: #ffffff;
 transition: color 0.5s ease;
 z-index: 999;
 }
@@ -1725,9 +1725,7 @@ z-index: 999;
 
 
 .overlay-text.second:hover {
--webkit-text-fill-color: transparent;
--webkit-text-stroke-width: 1px;
-color: white;
+  color: #FF6200;
 }
 
 
